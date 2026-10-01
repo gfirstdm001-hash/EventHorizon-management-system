@@ -49,4 +49,8 @@ npm run dev
 npm start
 ```
 
+## RENDER DEPLOYMENT LINK FOR THIS PROJECT
 
+```
+https://eventhorizon-management-system-1.onrender.com
+```
