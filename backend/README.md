@@ -54,3 +54,34 @@ npm start
 ```
 https://eventhorizon-management-system-1.onrender.com
 ```
+
+## API Documentation
+
+### Register
+POST `/api/auth/register`
+
+Body:
+{
+    "firstName": "Rodney",
+    "lastName": "Rowdy",
+    "email": "Rodney@41gmail.com",
+    "password": "f342abt678"
+}
+
+### Login
+POST `/api/auth/login`
+
+Body:
+{
+    "email": "Rodney@41gmail.com",
+    "password": "f342abt678"
+}
+
+### Verify Email
+GET `/api/auth/verify-email?token=xyz123`
+
+### Get Profile
+GET `/api/user/profile`
+
+Authorization:
+Bearer JWT_TOKEN
