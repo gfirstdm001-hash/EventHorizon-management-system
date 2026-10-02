@@ -1,0 +1,4 @@
+{
+    "chat.checkpoints.showFileChanges": true,
+    "chat.agent.sandbox.allowAutoApprove": false
+}
