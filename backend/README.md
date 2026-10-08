@@ -26,12 +26,12 @@ This application requires specific environment variables to run.
 1. You can ceate a file named `.env` and `.gitignore` inside the subfolder using:
 ``` bash
  cd backend/
-touch .env
+touch .env .gitignore
 ```
 
 2. copy and paste the following keys into the `.env` file and supply your credentials:
 
-``` bash
+``` env
 PORT=3555
 MONGO_URI=mongodb_connection_string
 JWT_SECRET=your_jwt_secret
@@ -77,33 +77,3 @@ https://eventhorizon-management-system-1.onrender.com
 npm start
 ```
 
-## API Documentation
-
-### Register
-POST `/api/auth/register`
-
-Body:
-{
-    "firstName": "Rodney",
-    "lastName": "Rowdy",
-    "email": "Rodney@41gmail.com",
-    "password": "f342abt678"
-}
-
-### Login
-POST `/api/auth/login`
-
-Body:
-{
-    "email": "Rodney@41gmail.com",
-    "password": "f342abt678"
-}
-
-### Verify Email
-GET `/api/auth/verify-email?token=xyz123`
-
-### Get Profile
-GET `/api/user/profile`
-
-Authorization:
-Bearer JWT_TOKEN
