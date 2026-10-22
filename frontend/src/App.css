@@ -1,0 +1,111 @@
+
+/* Navigation bar */
+.header {
+  min-height: 100vh;
+  background: #0b1020;
+  color: #faf8fc;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 7%;
+  border-bottom: 1px solid #40253b;
+}
+
+nav h2 {
+  font-size: 26px;
+  margin: 0;
+  color: #a78bfa;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #ae5dac;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #a78bfa;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #8b5cf6;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #7c3aed;
+}
+
+/* Hero section */
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 110px 24px 80px;
+  text-align: center;
+}
+
+.hero p:first-child {
+  color: #a78bfa;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  max-width: 800px;
+  margin: 0 auto 24px;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.hero p:nth-child(3) {
+  max-width: 580px;
+  margin: 0 auto 32px;
+  color: #a7b0c5;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .nav-links {
+    order: -1;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .hero {
+    padding-top: 50px;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+}
